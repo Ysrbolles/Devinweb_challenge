@@ -5,15 +5,17 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <div class="h-screen  w-screen bg-gray-200" >
+  <div class="h-screen w-screen bg-gray-200" >
     <Navbar />
     <Home />
+    <Content />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Layout/Navbar.vue";
 import Home from "./Views/Home.vue";
+import Content from "./components/Layout//Content.vue";
 
 export default {
   name: "App",
