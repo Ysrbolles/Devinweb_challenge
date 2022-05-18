@@ -9,13 +9,17 @@ import HelloWorld from "./components/HelloWorld.vue";
     <Navbar />
     <Home />
     <Content />
+    <Categories />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Layout/Navbar.vue";
 import Home from "./Views/Home.vue";
-import Content from "./components/Layout//Content.vue";
+import Content from "./components/HomeSection/Content.vue";
+import Categories from "./components/HomeSection//Categories.vue";
+import Footer from "./components/Layout/Footer.vue"
 
 export default {
   name: "App",
