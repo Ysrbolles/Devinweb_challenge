@@ -1,24 +1,13 @@
-<script setup>
-import Navbar from "./components/Layout/Navbar.vue";
-import Home from "./Views/Home.vue";
-import Content from "./components/HomeSection/Content.vue";
-import Categories from "./components/HomeSection//Categories.vue";
-import Footer from "./components/Layout/Footer.vue"
-
-</script>
-
 <template>
-  <div class="h-screen w-screen bg-gray-200" >
-    <Navbar />
-    <Home />
-    <Content />
-    <Categories />
-    <Footer />
+  <div>
+    <router-view />
   </div>
 </template>
 
 <script>
+import Home from "./Views/Home.vue";
 export default {
+  components: { Home },
   name: "App",
 };
 </script>

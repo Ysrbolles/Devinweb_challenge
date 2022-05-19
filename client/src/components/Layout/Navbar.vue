@@ -4,7 +4,8 @@
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
     >
       <a
-        class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        href="/"
+        class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer" 
       >
         <span>
           <i class="bi bi-shop text-2xl" />
@@ -15,9 +16,10 @@
         class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
       >
         <a
-          class="mr-5 hover:text-gray-900 text-xl"
+          class="mr-5 hover:text-gray-900 text-xl cursor-pointer"
           v-for="link in Links"
           :key="link.name"
+          :href="link.link"
           >{{ link.name }}</a
         >
       </nav>
@@ -34,17 +36,14 @@ import { ref } from "@vue/reactivity";
 export default {
   name: "Navbar",
   setup() {
-    let open = ref(false);
     let Links = [
-      { name: "Home", link: "#" },
-      { name: "Shop", link: "#" },
-      { name: "About", link: "#" },
-      { name: "Contact", link: "#" },
+      { name: "Home", link: "/" },
+      { name: "Shop", link: "/shop" },
+      { name: "About", link: "/about" },
+      { name: "Contact", link: "/contact" },
     ];
-    function openmenu() {
-      open.value = !open.value;
-    }
-    return { Links, open, openmenu };
+  
+    return { Links };
   },
 };
 </script>
