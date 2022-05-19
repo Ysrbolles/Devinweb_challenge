@@ -32,7 +32,7 @@
             <a href="/shop/4">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl"
+                class="w-full h-full object-cover object-center block rounded-xl hover:-rotate-2  transition ease-in"
                 src="https://images.unsplash.com/photo-1556906781-9a412961c28c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587"
               />
             </a>
@@ -43,7 +43,7 @@
             <a href="/shop/5">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl"
+                class="w-full h-full object-cover object-center block rounded-xl  hover:rotate-2 transition ease-in"
                 src="https://images.unsplash.com/photo-1560159006-de4e5ffcfd47?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587"
               />
             </a>

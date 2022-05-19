@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font bg-gray-200 cursor-pointer">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
+    <div class="container px-5 py-24 mx-auto" >
+      <div class="flex flex-col text-center w-full mb-20" data-aos="fade-right">
         <h1
           class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
         >
@@ -13,9 +13,10 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap -m-4">
+      <div class="flex flex-wrap -m-4" data-aos="fade-left">
         <div class="xl:w-1/4 md:w-1/2 p-4" v-for="item in Stroedata" :key="item.id">
-          <div class="bg-gray-100 p-6 rounded-lg">
+        <a href="/shop/1">
+             <div class="bg-gray-100 p-6 rounded-lg">
             <img
               class="h-60 rounded w-full object-cover object-center mb-6"
               :src="item.image"
@@ -33,6 +34,7 @@
              {{item.description.substring(0, 80)}}...
             </p>
           </div>
+        </a>
         </div>
       </div>
     </div>
