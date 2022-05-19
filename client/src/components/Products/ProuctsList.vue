@@ -1,5 +1,5 @@
 <template>
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font" data-aos="zoom-in">
   <div class="container  py-2 mx-auto">
     <div class="flex flex-wrap " >
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer" v-for="item in ProuctsList" :key="item.id" >

@@ -98,7 +98,7 @@
                             :value="option.value"
                             type="checkbox"
                             :checked="option.checked"
-                            class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500"
+                            class="h-4 w-4 border-gray-300 rounded text-gray-600 focus:ring-gray-500"
                           />
                           <label
                             :for="`filter-mobile-${section.id}-${optionIdx}`"
@@ -117,7 +117,7 @@
         </Dialog>
       </TransitionRoot>
 
-      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-left">
         <div
           class="relative z-10 flex items-baseline justify-between pt-24 pb-6 border-b border-gray-200"
         >
@@ -234,7 +234,7 @@
                     </span>
                   </DisclosureButton>
                 </h3>
-                <DisclosurePanel class="pt-6">
+                <DisclosurePanel class="pt-6" data-aos="flip-up">
                   <div class="space-y-4">
                     <div
                       v-for="(option, optionIdx) in section.options"
@@ -247,7 +247,7 @@
                         :value="option.value"
                         type="checkbox"
                         :checked="option.checked"
-                        class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500"
+                        class="h-4 w-4 border-gray-300 rounded text-gray-600 focus:ring-gray-500"
                       />
                       <label
                         :for="`filter-${section.id}-${optionIdx}`"
